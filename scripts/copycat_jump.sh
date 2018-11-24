@@ -97,7 +97,7 @@ _get_match_line_position() {
 }
 
 _copycat_jump() {
-	local line_number="$1"
+	local line_number="$($1 - 1)"
 	local match_line_position="$2"
 	local match="$3"
 	local scrollback_line_number="$4"
